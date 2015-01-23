@@ -78,52 +78,6 @@ class PrimesMatrix
   end
 
 
-  #@mult_table = []
-
-  #def mult_table
-  #  @mult_table
-  #end
-
-  #def generate_mult_table(list, size)
-  #  mult_table = []
-  #  row_counter = 0
-  #  while row_counter <= size
-  #    col_counter = 0
-  #    row_array = []
-  #    while col_counter <= size
-  #      if col_counter == 0 && row_counter == 0
-  #        row_array.push('--')
-  #      elsif col_counter == 0
-  #        row_array.push(list[row_counter-1])
-  #      elsif row_counter == 0
-  #        row_array.push(list[col_counter-1])
-  #      else
-  #        row_array.push(list[col_counter-1] * list[row_counter-1])
-  #      end
-  #      col_counter = col_counter + 1
-  #    end
-  #    mult_table.push(row_array)
-  #    row_counter = row_counter + 1
-  #  end
-  #  mult_table
-  #end
-
-  #def print_mult_table
-  #  row_counter = 0
-  #  print "\n"
-  #  while row_counter < @mult_table.length
-  #    col_counter = 0
-  #    while col_counter < @mult_table[row_counter].length
-  #      print @mult_table[row_counter][col_counter]
-  #      print "\t"
-  #      col_counter = col_counter + 1
-  #    end
-  #    row_counter = row_counter + 1
-  #    print "\n"
-  #  end
-  #  print "\n"
-  #end
-
 end
 
 
