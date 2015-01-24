@@ -46,4 +46,22 @@ class TestMeme < MiniTest::Unit::TestCase
   end
 
 
+  def test_print_primes_mult_table_3
+    pm2 = PrimesMatrix.new(1)
+    out, err = capture_io do
+      pm2.print_primes_mult_table
+    end
+    assert_match  "\n--\t2\t\n2\t4\t\n", out
+  end
+
+
+  def test_print_primes_mult_table_4
+    pm2 = PrimesMatrix.new(0)
+    out, err = capture_io do
+      pm2.print_primes_mult_table
+    end
+    assert_match  "\n--\t\n", out
+  end
+
+
 end
